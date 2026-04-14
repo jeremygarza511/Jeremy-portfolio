@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy Garza — Career Goals</title>
+    <link rel="stylesheet" href="master.css">
+    <style>
+        .goals-intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            align-items: center;
+        }
+        .goals-intro-grid .image-col img {
+            width: 100%;
+            border-radius: 2px;
+        }
+        .media-block {
+            margin: 1.5rem 0;
+            background-color: #ffffff;
+            border: 1px solid #d9d4c7;
+            padding: 1.25rem;
+            border-radius: 2px;
+        }
+        .media-block h4 { margin-bottom: 0.5rem; }
+        @media (max-width: 640px) {
+            .goals-intro-grid { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1 id="page-header-name">Jeremy Garza</h1>
+        <p class="page-subtitle">Career Goals &amp; Vision Statement</p>
+        <p class="contact-line">
+            <a href="mailto:jeremygarza311@gmail.com">jeremygarza311@gmail.com</a>
+            &nbsp;|&nbsp; (210) 718-8285
+            &nbsp;|&nbsp; San Antonio, TX 78245
+        </p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav aria-label="Portfolio Navigation">
+        <ul id="main-nav-list">
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="cover-letter.html">Cover Letter</a></li>
+            <li><a href="career-goals.html" class="active">Career Goals</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- IMAGE -->
+        <section id="goals-intro">
+            <div class="goals-intro-grid">
+                <div class="image-col">
+                    <img
+                        src="picture.jpg"
+                        alt="Jeremy Garza — Software Engineering student and IT professional banner"
+                        width="500"
+                        height="200"
+                    >
+                    <p class="media-caption">Jeremy Garza &mdash; San Antonio, TX</p>
+                </div>
+                <div class="text-col">
+                    <span class="section-label">Vision</span>
+                    <h2>Where I Am Headed</h2>
+                    <p>
+                        My goal is to build a career in software development or IT systems where
+                        I can solve real problems for real people. I started in customer-facing
+                        tech roles — Best Buy, IKEA, volunteer IT support — and those experiences
+                        showed me how much <strong>good software and reliable systems matter</strong>
+                        to people's daily lives. Now I am pursuing my degree at WGU and building
+                        the technical depth to work on those systems from the inside.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SHORT-TERM GOALS -->
+        <section id="short-term-goals">
+            <h2>Short-Term Goals (1–2 Years)</h2>
+
+            <div class="goal-card">
+                <h3>Complete My BS in Software Engineering at WGU</h3>
+                <p>
+                    My most immediate priority is finishing my degree. I am currently working
+                    through coursework in Advanced Java, back-end programming, data structures,
+                    and software security. Each course is building a foundation I plan to apply
+                    directly in a professional development role. I am pushing to
+                    <em>accelerate my WGU term completion</em> so I can enter the workforce
+                    sooner without sacrificing depth of understanding.
+                </p>
+            </div>
+
+            <div class="goal-card">
+                <h3>Land My First Technical Role</h3>
+                <p>
+                    Whether that is a junior developer position, a help desk or IT support role,
+                    or a hybrid customer-technical position, I want to get my foot in the door of
+                    a team where I can grow. My experience with <strong>Salesforce CRM, Linux
+                    configuration, and hardware troubleshooting</strong> means I am not starting
+                    from zero — I just need the opportunity to apply those skills in a dedicated
+                    tech environment.
+                </p>
+            </div>
+
+            <div class="goal-card">
+                <h3>Earn a Relevant Certification</h3>
+                <p>
+                    I am targeting either <strong>CompTIA A+</strong> or the
+                    <em>AWS Certified Cloud Practitioner</em> certification within the next year.
+                    Certifications validate the hands-on work I have been doing in my home lab
+                    and signal to employers that my skills are real, not just listed on a résumé.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- LONG-TERM GOALS  -->
+        <section id="long-term-goals">
+            <h2>Long-Term Goals (3–5 Years)</h2>
+
+            <div class="goal-card">
+                <h3>Grow Into a Full Software Developer Role</h3>
+                <p>
+                    Long-term, I want to be writing production code as part of a development team
+                    — working on back-end systems, APIs, or internal tooling. My Java coursework
+                    and home lab experience have given me a genuine appreciation for how systems
+                    are structured. I want to <em>deepen that understanding through real
+                    professional experience</em> until I can contribute meaningfully to complex
+                    projects.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section id="contact-section">
+            <h2>Get in Touch</h2>
+            <p>
+                Interested in connecting, collaborating, or learning more about my background?
+                Fill out the form below and I will get back to you within one business day.
+            </p>
+
+            <div id="contact-form">
+                <form action="https://wp.zybooks.com/form-viewer.php" method="post" novalidate>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name<span class="text-gold"> *</span></label>
+                            <input type="text" id="first-name" name="first-name"
+                                placeholder="Walter" required>
+                            <label for="last-name">Last Name<span class="text-gold"> *</span></label>
+                            <input type="text" id="last-name" name="last-name"
+                                placeholder="White" reqiured>
+                            <label for="company-name">Company Name<span class="text-gold"> *</span></label>
+                            <input type="text" id="company-name" name="company-name"
+                                placeholder="Pinkmans Chem" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="text-gold">*</span></label>
+                        <input type="email" id="email" name="email"
+                            placeholder="walterwhite@company.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone"
+                            placeholder="(888) 888-8888">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="text-gold">*</span></label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Tell me about an opportunity or just say hello..."
+                            required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Best Contact Time</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="contact_time" value="am"> A.M.
+                            </label>
+                            <label>
+                                <input type="radio" name="contact_time" value="pm"> P.M.
+                            </label>
+                            <label>
+                                <input type="radio" name="contact_time" value="anytime" checked>
+                                Anytime
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-method">Preferred Contact Method</label>
+                        <select id="contact-method" name="contact_method" size="1">
+                            <option value="">-- Select One --</option>
+                            <option value="phone">Phone</option>
+                            <option value="email">Email</option>
+                            <option value="text">Text</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit">Send Message</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; <span id="footer-year-cg"></span> Jeremy Garza &mdash; D276</p>
+        <p>
+            <a href="resume.html">Resume</a> &nbsp;|&nbsp;
+            <a href="cover-letter.html">Cover Letter</a> &nbsp;|&nbsp;
+            <a href="career-goals.html">Career Goals</a>
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('footer-year-cg').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
+
+<!-- JG. -->

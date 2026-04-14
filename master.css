@@ -1,0 +1,584 @@
+/* 
+   master.css — Jeremy Garza Portfolio
+   Linked to: resume.html, cover-letter.html, career-goals.html
+*/
+
+/*  Universal Selector  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*  Element Selectors --- */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #f4f1ec;
+    color: #1a1a2e;
+    line-height: 1.75;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #0f1e3c;
+    color: #f4f1ec;
+    padding: 2.5rem 3rem;
+    border-bottom: 4px solid hsl(215, 79%, 50%);
+    position: relative;
+}
+
+nav {
+    background-color: #162545;
+    padding: 0;
+    border-bottom: 2px solid hsl(215, 79%, 50%);
+}
+
+main {
+    flex: 1;
+    padding: 2.5rem 3rem;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+article {
+    background-color: #ffffff;
+    border: 1px solid #d9d4c7;
+    border-left: 5px solid hsl(215, 79%, 50%);
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 2px;
+}
+
+footer {
+    background-color: #0f1e3c;
+    color: #a8b5cc;
+    text-align: center;
+    padding: 1.25rem 2rem;
+    font-size: 0.85rem;
+    border-top: 4px solid hsl(215, 79%, 50%);
+    margin-top: auto;
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: normal;
+    letter-spacing: 0.08em;
+    color: hsl(215, 79%, 50%);
+}
+
+h2 {
+    font-size: 1.65rem;
+    font-weight: normal;
+    color: hsl(215, 79%, 50%);
+    border-bottom: 1px solid hsl(215, 79%, 50%);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: #1a1a2e;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+h4 {
+    font-size: 1.05rem;
+    color: #3a3a5c;
+    margin-bottom: 0.3rem;
+}
+
+h5 {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6b6b8a;
+    margin-bottom: 0.25rem;
+}
+
+h6 {
+    font-size: 0.85rem;
+    color: #8888aa;
+    font-style: italic;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #2c2c44;
+}
+
+a {
+    color: #d4d4e7;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #1854cc;
+    text-decoration: underline;
+}
+
+ul, ol {
+    margin: 0.75rem 0 1rem 2rem;
+}
+
+li {
+    margin-bottom: 0.35rem;
+    color: #2c2c44;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.95rem;
+}
+
+caption {
+    font-style: italic;
+    color: #6b6b8a;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+th {
+    background-color: #0f1e3c;
+    color: hsl(215, 79%, 50%);
+    padding: 0.7rem 1rem;
+    text-align: left;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+td {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid #d9d4c7;
+    vertical-align: top;
+}
+
+tr:nth-child(even) td {
+    background-color: #f9f7f2;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid hsl(215, 79%, 50%);
+    margin: 1.75rem 0;
+    opacity: 0.5;
+}
+
+strong {
+    color: #0f1e3c;
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+    color: #4a4a6a;
+}
+
+mark {
+    background-color: #fff3b0;
+    color: #1a1a2e;
+    padding: 0.1em 0.3em;
+    border-radius: 2px;
+}
+
+span {
+    display: inline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid hsl(215, 79%, 50%);
+    border-radius: 2px;
+}
+
+audio {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+video {
+  width: 100%;       
+  max-width: 640px;   
+  height: 50%;       
+}
+input, textarea, select {
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    color: #1a1a2e;
+    background-color: #ffffff;
+    border: 1px solid #2b50bd;
+    border-radius: 2px;
+    padding: 0.55rem 0.85rem;
+    width: 100%;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: hsl(215, 79%, 50%);
+    box-shadow: 0 0 0 3px rgba(200, 168, 100, 0.2);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button[type="submit"] {
+    background-color: #d5d5d5;
+    color: hsl(215, 79%, 50%);
+    border: 2px solid hsl(215, 79%, 50%);
+    padding: 0.75rem 2.5rem;
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border-radius: 2px;
+    margin-top: 0.75rem;
+}
+
+button[type="submit"]:hover {
+    background-color: hsl(215, 79%, 50%);
+    color: #0f1e3c;
+}
+
+/* Class Selectors  */
+.page-subtitle {
+    font-size: 1rem;
+    color: #a8b5cc;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 0.4rem;
+}
+
+.contact-line {
+    font-size: 0.9rem;
+    color: #8888aa;
+    margin-top: 0.25rem;
+}
+
+.contact-line a {
+    color: solid hsl(215, 79%, 50%);
+}
+
+.section-label {
+    display: inline-block;
+    background-color: hsla(215, 79%, 50%, 0.123);
+    color: #0f1e3c;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.6rem;
+    margin-bottom: 0.75rem;
+    font-style: normal;
+}
+
+.date-badge {
+    display: inline-block;
+    background-color: #f9f7f2;
+    border: 1px solid #c8b888;
+    color: #6b6b8a;
+    font-size: 0.85rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 2px;
+    margin-bottom: 1.25rem;
+    font-style: italic;
+}
+
+.highlight-name {
+    color: hsl(227, 74%, 46%);
+    font-weight: bold;
+}
+
+.skills-list {
+    list-style: none;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skills-list li {
+    background-color: #9faecb;
+    color: hsl(215, 79%, 50%);
+    padding: 0.3rem 0.75rem;
+    border-radius: 2px;
+    font-size: 0.88rem;
+    letter-spacing: 0.05em;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.88rem;
+    color: #3a3a5c;
+    margin-bottom: 0.35rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.radio-group {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.35rem;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    text-transform: none;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    width: auto;
+    accent-color: #b2b2b2;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.goal-card {
+    background-color: #ffffff;
+    border: 1px solid #d9d4c7;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+    border-top: 4px solid hsl(215, 79%, 50%);
+}
+
+.media-caption {
+    font-size: 0.82rem;
+    color: #8888aa;
+    font-style: italic;
+    margin-top: 0.3rem;
+    text-align: center;
+}
+
+.letter-date {
+    text-align: right;
+    color: #6b6b8a;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.signature-block {
+    margin-top: 2rem;
+    border-top: 1px solid #d9d4c7;
+    padding-top: 1rem;
+}
+
+/*  ID Selectors  */
+#page-header-name {
+    font-size: 2.8rem;
+    color: hsl(215, 79%, 50%);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+#current-date {
+    font-size: 0.88rem;
+    color: #6b6b8a;
+    font-style: italic;
+    margin: 0.5rem 0 1.5rem;
+    padding: 0.35rem 0.75rem;
+    border-left: 3px solid hsl(215, 79%, 50%);
+    background-color: #f9f7f2;
+    display: inline-block;
+}
+
+#main-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#main-nav-list li {
+    margin-bottom: 0;
+}
+
+#main-nav-list li a {
+    display: block;
+    padding: 0.85rem 1.5rem;
+    color: #a8b5cc;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    border-bottom: 3px solid transparent;
+}
+
+#skills-table {
+    font-size: 0.9rem;
+}
+
+#contact-form {
+    background-color: #ffffff;
+    border: 1px solid #223eb8;
+    padding: 2rem;
+    border-radius: 2px;
+    border-top: 4px solid hsl(215, 79%, 50%);
+}
+
+/*  Descendant Selectors  */
+header h1 {
+    color: hsl(215, 79%, 50%);
+}
+
+header p {
+    color: #a8b5cc;
+    font-size: 0.9rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+main section h2 {
+    margin-top: 0.5rem;
+}
+
+article p {
+    margin-bottom: 0.75rem;
+}
+
+article p:last-child {
+    margin-bottom: 0;
+}
+
+footer p {
+    color: #a8b5cc;
+    font-size: 0.85rem;
+}
+
+#contact-form .form-group label {
+    color: #265ac2;
+    font-weight: bold;
+}
+
+/*  Pseudo-class Selectors  */
+a:hover {
+    color: #2b50bd;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #2b50bd;
+}
+
+a:focus {
+    outline: 2px dashed hsl(215, 79%, 50%);
+    outline-offset: 3px;
+}
+
+#main-nav-list li a:hover {
+    color: hsl(215, 79%, 50%);
+    background-color: #1e3255;
+    border-bottom: 3px solid hsl(215, 79%, 50%);
+}
+
+#main-nav-list li a.active {
+    color: hsl(215, 79%, 50%);
+    border-bottom: 3px solid hsl(215, 79%, 50%);
+}
+
+tr:hover td {
+    background-color: #eee9de;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: hsl(215, 79%, 50%);
+    box-shadow: 0 0 0 3px rgba(200, 168, 100, 0.2);
+}
+
+button[type="submit"]:hover {
+    background-color: #2b50bd;
+    color: #ffffff;
+}
+
+.goal-card:hover {
+    box-shadow: 0 4px 16px rgba(200, 168, 100, 0.15);
+}
+
+/*  Font and Color Properties */
+.font-serif {
+    font-family: 'Georgia', 'Palatino Linotype', serif;
+    font-size: 1rem;
+    font-style: normal;
+}
+
+.font-display {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    color: #3a3a5c;
+}
+
+/*  List-style Properties  */
+ul.styled-list {
+    list-style-type: square;
+    margin-left: 1.5rem;
+}
+
+ul.styled-list li {
+    color: #2c2c44;
+    padding: 0.1rem 0;
+}
+
+ol.styled-ordered {
+    list-style-type: decimal;
+    margin-left: 1.5rem;
+}
+
+ol.styled-ordered li {
+    color: #2c2c44;
+    padding: 0.15rem 0;
+}
+
+/*  Utilities  */
+.text-lightblue { color: hsl(215, 79%, 50%); }
+.text-muted { color: #8888aa; }
+.text-navy { color: #0f1e3c; }
+.mt-1 { margin-top: 1rem; }
+.mb-1 { margin-bottom: 1rem; }
+.fw-bold { font-weight: bold; }
+
+
+/* JG.
+ D276 Submission 
+*/
