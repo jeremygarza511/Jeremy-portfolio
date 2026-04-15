@@ -281,7 +281,7 @@ button[type="submit"]:hover {
 }
 
 .contact-line a {
-    color: solid hsl(215, 79%, 50%);
+    color: hsl(215, 79%, 50%);
 }
 
 .section-label {
